@@ -23,7 +23,7 @@
 | ID | Task | Status | Evidence / Notes |
 |---|---|---|---|
 | M1-01 | Loader with explicit schema and row_id | **Done** | `schema.py` defines 41 `RAW_COLUMNS` & `validate_raw()`; `load_raw()` attaches contiguous `row_id` (0..979); tested in `tests/test_clean.py`. |
-| M1-02 | Cleaning pipeline | Pending | |
+| M1-02 | Cleaning pipeline | **Done** | `data/clean.py` implemented (idempotent, sentinels 143/68, invariants asserted, `model_display` kept); `phones_clean.csv` generated. |
 | M1-03 | Duplicate grouping and collision audit | Pending | |
 | M1-04 | Outer split | Pending | |
 | M1-05 | CV_SPLITS, brand-holdout splitter and positions_for | Pending | |
@@ -36,7 +36,7 @@
 |---|---|---|---|---|
 | Gate 0 | Decisions before code | **Done** | 3 | 3 |
 | M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | **Done** | 5 | 5 |
-| M1 | Data (Clean, Groups, Split, Audit) | In Progress | 7 | 1 |
+| M1 | Data (Clean, Groups, Split, Audit) | In Progress | 7 | 2 |
 | M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
 | M3 | Regression Pipeline | Pending | 7 | 0 |
 | M4 | Classification Pipeline | Pending | 6 | 0 |
