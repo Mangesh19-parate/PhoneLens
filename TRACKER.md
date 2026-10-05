@@ -18,13 +18,25 @@
 | M0-04 | Lint and test harness | **Done** | `pyproject.toml` configured; `test_smoke_import.py` and `test_import_graph.py` created; `pytest` and `ruff check .` clean. |
 | M0-05 | Place raw CSV and loader | **Done** | `data/raw/smartphone_v5.csv` placed; `load.py` implemented with `file_sha256()` and `load_raw()`; unit tests passing. |
 
+## M1: Data (Clean, Groups, Split, Audit)
+
+| ID | Task | Status | Evidence / Notes |
+|---|---|---|---|
+| M1-01 | Loader with explicit schema and row_id | **Done** | `schema.py` defines 41 `RAW_COLUMNS` & `validate_raw()`; `load_raw()` attaches contiguous `row_id` (0..979); tested in `tests/test_clean.py`. |
+| M1-02 | Cleaning pipeline | Pending | |
+| M1-03 | Duplicate grouping and collision audit | Pending | |
+| M1-04 | Outer split | Pending | |
+| M1-05 | CV_SPLITS, brand-holdout splitter and positions_for | Pending | |
+| M1-06 | Data tests | Pending | |
+| M1-07 | EDA notebook / clean data script | Pending | |
+
 ## Milestone Tracker Summary
 
 | Milestone | Description | Status | Total Tasks | Completed Tasks |
 |---|---|---|---|---|
 | Gate 0 | Decisions before code | **Done** | 3 | 3 |
 | M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | **Done** | 5 | 5 |
-| M1 | Data (Clean, Groups, Split, Audit) | Pending | 7 | 0 |
+| M1 | Data (Clean, Groups, Split, Audit) | In Progress | 7 | 1 |
 | M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
 | M3 | Regression Pipeline | Pending | 7 | 0 |
 | M4 | Classification Pipeline | Pending | 6 | 0 |

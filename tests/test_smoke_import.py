@@ -12,6 +12,7 @@ def test_import_phonelens_core():
         "phonelens.config",
         "phonelens.data",
         "phonelens.data.load",
+        "phonelens.data.schema",
         "phonelens.features",
         "phonelens.models",
         "phonelens.analytics",
@@ -41,13 +42,14 @@ def test_config_constants_exist():
 
 
 def test_raw_dataset_hash_and_shape():
-    """Verify raw dataset checksum and dimensions (980, 41)."""
+    """Verify raw dataset checksum and dimensions (980 rows, 41 raw cols + row_id)."""
     expected_hash = "d0816ac9295c8a202c823c5d19df734d15ecb791f81d6a16c52e93f6b4bfbbb1"
     actual_hash = file_sha256()
     assert actual_hash == expected_hash
 
     df = load_raw()
-    assert df.shape == (980, 41)
+    assert df.shape == (980, 42)
+    assert "row_id" in df.columns
     assert "price" in df.columns
     assert "price_segment" in df.columns
     assert "brand_name" in df.columns
