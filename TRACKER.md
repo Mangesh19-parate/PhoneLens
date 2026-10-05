@@ -14,7 +14,7 @@
 |---|---|---|---|
 | M0-01 | Create repository skeleton & guidelines | **Done** | Full package directories created; `AGENTS.md` populated with non-negotiable rules. |
 | M0-02 | Dependencies & Makefile | **Done** | `requirements.txt`, `requirements-dev.txt`, and `Makefile` created; targets mapped to non-make equivalents in `README.md`. |
-| M0-03 | Central config (`config.py`) | Pending | |
+| M0-03 | Central config (`config.py`) | **Done** | `src/phonelens/config.py` created with all paths, seeds, thresholds, and quality gate constants. |
 | M0-04 | Lint and test harness | Pending | |
 | M0-05 | Place raw CSV and loader | Pending | |
 
@@ -23,7 +23,7 @@
 | Milestone | Description | Status | Total Tasks | Completed Tasks |
 |---|---|---|---|---|
 | Gate 0 | Decisions before code | **Done** | 3 | 3 |
-| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | In Progress | 5 | 2 |
+| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | In Progress | 5 | 3 |
 | M1 | Data (Clean, Groups, Split, Audit) | Pending | 7 | 0 |
 | M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
 | M3 | Regression Pipeline | Pending | 7 | 0 |
