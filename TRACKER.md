@@ -1,12 +1,28 @@
 # PhoneLens: Progress Tracker
 
-## Gate 0: Decisions Before Code
+## Gate 0: Decisions Before Code (All Complete)
 
 | ID | Task | Status | Evidence / Notes |
 |---|---|---|---|
-| G0-01 | Syllabus / mandated algorithms check | **Done** | Decision D-23 recorded in `MEMORY.md`: None required; standard suite applies. |
-| G0-02 | Check target machine & environment | **Done** | Decision D-24 recorded in `MEMORY.md`: Python 3.13.14 on Win11 verified; all deps dry-run and imported successfully. |
-| G0-03 | Confirm dataset provenance, licence, currency | Pending | |
+| G0-01 | Syllabus / mandated algorithms check | **Done** | Decision D-23 in `MEMORY.md`: Standard candidate suite applied. |
+| G0-02 | Check target machine & environment | **Done** | Decision D-24 in `MEMORY.md`: Python 3.13.14 on Win11 verified; deps imported successfully. |
+| G0-03 | Confirm dataset provenance, licence, currency | **Done** | Decision D-25 in `MEMORY.md` & `README.md`: SHA-256 `d0816ac...` computed, INR assumption and licensing caveats documented. |
+
+## Milestone Tracker
+
+| Milestone | Description | Status | Total Tasks | Completed Tasks |
+|---|---|---|---|---|
+| Gate 0 | Decisions before code | **Done** | 3 | 3 |
+| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | Pending | 5 | 0 |
+| M1 | Data (Clean, Groups, Split, Audit) | Pending | 7 | 0 |
+| M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
+| M3 | Regression Pipeline | Pending | 7 | 0 |
+| M4 | Classification Pipeline | Pending | 6 | 0 |
+| M5 | Intervals, Explanations, OOF, Contract Freeze | Pending | 8 | 0 |
+| M6 | Analytics Logic | Pending | 5 | 0 |
+| M7 | Flask API | Pending | 7 | 0 |
+| M8 | UI (Pages, Components, Charts) | Pending | 10 | 0 |
+| M9 | Audit & Verification | Pending | 6 | 0 |
 
 ## Quality Gates Status
 

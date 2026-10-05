@@ -24,3 +24,9 @@
   - pytest-cov: 7.1.0 (coverage: 7.15.2)
   - ruff: 0.5.6
 - **Result**: Dry-run install and package import checks passed with zero errors.
+
+### D-25: Dataset Provenance, Licence & Currency (G0-03)
+- **Status**: Verified & Documented
+- **File & Hash**: `smartphone_v5.csv`, SHA-256 `d0816ac9295c8a202c823c5d19df734d15ecb791f81d6a16c52e93f6b4bfbbb1` (980 rows, 41 columns).
+- **Currency**: INR (₹) assumed circumstantially based on domestic Indian brand presence (e.g. iQOO, Poco, Lyf, Micromax) and Indian market retail pricing distributions. Caveat retained across UI and reports.
+- **Licence**: Public academic/educational dataset snapshot; treated strictly as an educational benchmark.
