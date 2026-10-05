@@ -5,7 +5,7 @@
 | ID | Task | Status | Evidence / Notes |
 |---|---|---|---|
 | G0-01 | Syllabus / mandated algorithms check | **Done** | Decision D-23 recorded in `MEMORY.md`: None required; standard suite applies. |
-| G0-02 | Check target machine & environment | Pending | |
+| G0-02 | Check target machine & environment | **Done** | Decision D-24 recorded in `MEMORY.md`: Python 3.13.14 on Win11 verified; all deps dry-run and imported successfully. |
 | G0-03 | Confirm dataset provenance, licence, currency | Pending | |
 
 ## Quality Gates Status
