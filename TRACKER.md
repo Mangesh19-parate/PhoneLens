@@ -8,12 +8,22 @@
 | G0-02 | Check target machine & environment | **Done** | Decision D-24 in `MEMORY.md`: Python 3.13.14 on Win11 verified; deps imported successfully. |
 | G0-03 | Confirm dataset provenance, licence, currency | **Done** | Decision D-25 in `MEMORY.md` & `README.md`: SHA-256 `d0816ac...` computed, INR assumption and licensing caveats documented. |
 
-## Milestone Tracker
+## M0: Setup & Harness
+
+| ID | Task | Status | Evidence / Notes |
+|---|---|---|---|
+| M0-01 | Create repository skeleton & guidelines | **Done** | Full package directories created; `AGENTS.md` populated with non-negotiable rules. |
+| M0-02 | Dependencies & Makefile | Pending | |
+| M0-03 | Central config (`config.py`) | Pending | |
+| M0-04 | Lint and test harness | Pending | |
+| M0-05 | Place raw CSV and loader | Pending | |
+
+## Milestone Tracker Summary
 
 | Milestone | Description | Status | Total Tasks | Completed Tasks |
 |---|---|---|---|---|
 | Gate 0 | Decisions before code | **Done** | 3 | 3 |
-| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | Pending | 5 | 0 |
+| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | In Progress | 5 | 1 |
 | M1 | Data (Clean, Groups, Split, Audit) | Pending | 7 | 0 |
 | M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
 | M3 | Regression Pipeline | Pending | 7 | 0 |
