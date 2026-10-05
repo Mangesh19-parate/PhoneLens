@@ -8,22 +8,22 @@
 | G0-02 | Check target machine & environment | **Done** | Decision D-24 in `MEMORY.md`: Python 3.13.14 on Win11 verified; deps imported successfully. |
 | G0-03 | Confirm dataset provenance, licence, currency | **Done** | Decision D-25 in `MEMORY.md` & `README.md`: SHA-256 `d0816ac...` computed, INR assumption and licensing caveats documented. |
 
-## M0: Setup & Harness
+## M0: Setup & Harness (All Complete)
 
 | ID | Task | Status | Evidence / Notes |
 |---|---|---|---|
 | M0-01 | Create repository skeleton & guidelines | **Done** | Full package directories created; `AGENTS.md` populated with non-negotiable rules. |
 | M0-02 | Dependencies & Makefile | **Done** | `requirements.txt`, `requirements-dev.txt`, and `Makefile` created; targets mapped to non-make equivalents in `README.md`. |
 | M0-03 | Central config (`config.py`) | **Done** | `src/phonelens/config.py` created with all paths, seeds, thresholds, and quality gate constants. |
-| M0-04 | Lint and test harness | **Done** | `pyproject.toml` configured; `test_smoke_import.py` and `test_import_graph.py` created; `pytest` (5/5 passing) and `ruff check .` clean. |
-| M0-05 | Place raw CSV and loader | Pending | |
+| M0-04 | Lint and test harness | **Done** | `pyproject.toml` configured; `test_smoke_import.py` and `test_import_graph.py` created; `pytest` and `ruff check .` clean. |
+| M0-05 | Place raw CSV and loader | **Done** | `data/raw/smartphone_v5.csv` placed; `load.py` implemented with `file_sha256()` and `load_raw()`; unit tests passing. |
 
 ## Milestone Tracker Summary
 
 | Milestone | Description | Status | Total Tasks | Completed Tasks |
 |---|---|---|---|---|
 | Gate 0 | Decisions before code | **Done** | 3 | 3 |
-| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | In Progress | 5 | 4 |
+| M0 | Setup (Skeleton, Deps, Config, Makefile, CI) | **Done** | 5 | 5 |
 | M1 | Data (Clean, Groups, Split, Audit) | Pending | 7 | 0 |
 | M2 | Feature & Preprocessing Contract | Pending | 3 | 0 |
 | M3 | Regression Pipeline | Pending | 7 | 0 |
